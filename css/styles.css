@@ -50,6 +50,7 @@ html {
 body, p {
 	color: #f1f1f8; 
 	font: 400 0.875rem/1.375rem "Open Sans", sans-serif;
+	background-color: #262431;
 }
 
 .p-large {
@@ -638,16 +639,16 @@ input[type='checkbox'] {
 /*     03. Navigation     */
 /**************************/
 .navbar-custom {
-	background-color: #4633af;
+	background-color: #1f1327;
 	box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
 	font-family: 'Poppins', cursive;
 	transition: all 0.2s ease;
 }
 
 .navbar-custom .navbar-brand.logo-image img {
-    width: 250px;
-	height: 100px;
-	margin-bottom: -100px;
+    width: 200px;
+	height: 70px;
+	margin-bottom: -50%;
 	margin-top: -100px;
 	-webkit-backface-visibility: hidden;
 }
@@ -762,8 +763,12 @@ input[type='checkbox'] {
 /*    04. Header     */
 /*********************/
 .header {
-	background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('../images/header-background.jpg') center center no-repeat;
+	background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)),  center center no-repeat;
 	background-size: cover;
+}
+
+.header .header-bg {
+	display: none;
 }
 
 .header .header-content {
@@ -1280,7 +1285,6 @@ input[type='checkbox'] {
 .basic-4 {
 	padding-top: 6.5rem;
 	padding-bottom: 6.75rem;
-	background: url('../images/download-background.jpg') center center no-repeat;
 	background-size: cover; 
 }
 
@@ -1579,8 +1583,8 @@ a:hover.back-to-top {
 
 	.navbar-custom.top-nav-collapse {
         padding: 2rem 1.5rem 0.5rem 2rem;
-		box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
-		background-color: #4633af;
+		box-shadow: 0 0.0625rem 0.375rem 0 rgba(24 29 56 / 87%);
+		background-color: #1f1327;
 	}
 
 	.navbar-custom.top-nav-collapse .navbar-brand.logo-text {
@@ -1956,7 +1960,15 @@ a:hover.back-to-top {
 	}
 	/* end of navigation */
 
-	
+	.header .header-bg {
+		position: absolute;
+		top: 0;
+		left: -3.125rem;
+		display: block;
+		width: 82%;
+		height: 52.5rem;
+	}
+
 	/* General Styles */
 	.p-heading {
 		width: 44%;
